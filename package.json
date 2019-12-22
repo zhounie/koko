@@ -1,0 +1,27 @@
+{
+  "name": "koko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "serve": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoey-git/koko.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zoey-git/koko/issues"
+  },
+  "homepage": "https://github.com/zoey-git/koko#readme",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "koa": "^2.11.0",
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.8.2"
+  }
+}
