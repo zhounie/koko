@@ -60,8 +60,23 @@ const login = async (ctx) => {
     })
 }
 
+const userList = async (ctx) => {
+    await UserModel.find({}, (err, data) => {
+        if(err) {
+            return ctx.body = {
+                code: 301,
+                msg: err
+            }
+        }
+        return ctx.body = {
+            code: 200,
+            data: data
+        }
+    })
+}
 
 module.exports = {
     login,
-    register
+    register,
+    userList
 }
