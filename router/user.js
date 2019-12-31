@@ -1,7 +1,7 @@
 const Router = require('koa-router')
 const router = new Router()
 const { login, register, userList } = require('../controller/user')
-const { friendList, addFriend, findFriend } = require('../controller/friends')
+const { friendList, addFriend, findFriend, friendRequest, agreeFriendRequest } = require('../controller/friends')
 
 router
     .post('/login', login)
@@ -11,5 +11,7 @@ router
     .post('/addFriend', addFriend)
     .post('/addFriend', addFriend)
     .post('/findFriend', findFriend)
+    .post('/friendRequest', friendRequest)
+    .post('/agreeFriendRequest', agreeFriendRequest)
 
 module.exports = router.routes()

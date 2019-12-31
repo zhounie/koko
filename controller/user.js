@@ -54,7 +54,10 @@ const login = async (ctx) => {
             code: 200,
             data: {
                 id: data._id,
-                userName: data.userName
+                userName: data.userName,
+                nickName: data.nickName,
+                age: data.age,
+                sex: data.sex
             }
         }
     })
